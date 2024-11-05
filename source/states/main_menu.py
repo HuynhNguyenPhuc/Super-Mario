@@ -10,7 +10,7 @@ class Menu(tools.State):
         persist = {
             c.COIN_TOTAL: 0,
             c.SCORE: 0,
-            c.LIVES: 3,
+            c.LIVES: 100,
             c.TOP_SCORE: 0,
             c.CURRENT_TIME: 0.0,
             c.LEVEL_NUM: 4,
@@ -103,7 +103,7 @@ class Menu(tools.State):
     def reset_game_info(self):
         self.game_info[c.COIN_TOTAL] = 0
         self.game_info[c.SCORE] = 0
-        self.game_info[c.LIVES] = 3
+        self.game_info[c.LIVES] = 100
         self.game_info[c.CURRENT_TIME] = 0.0
         self.game_info[c.LEVEL_NUM] = 4
         self.persist = self.game_info

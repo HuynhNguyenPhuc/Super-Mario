@@ -73,7 +73,7 @@ class Info():
         self.create_label(self.stage_label, '1-4', 472, 35)
 
         self.info_labels = [self.score_text, self.coin_count_text, self.mario_label,
-                    self.world_label, self.best_score_label, self.best_score_text, self.stage_label]
+                            self.best_score_label, self.best_score_text]
 
     def create_state_labels(self):
         if self.state == c.MAIN_MENU:
@@ -128,8 +128,7 @@ class Info():
 
         self.create_label(world_label, 'WORLD', 280, 200)
         self.create_label(self.stage_label2, '1-4', 430, 200)
-        self.state_labels = [world_label, self.stage_label2,
-                *self.info_labels, self.life_total_label]
+        self.state_labels = [*self.info_labels, self.life_total_label]
 
     def create_level_labels(self):
         self.time = c.GAME_TIME_OUT
